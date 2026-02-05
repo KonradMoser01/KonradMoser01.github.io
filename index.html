@@ -9,21 +9,15 @@
 </head>
 <body>
     <h1>Topic 1</h1>
-    <h2>14:04</h2>
-
-    <button id="triggerAlert">Click Me for a jAlert!</button>
+    <h2>14:10</h2>
+    <!--<button id="triggerAlert">Click Me for a jAlert!</button> -->
     <script>
-        $(document).ready(function() {
-            $('#triggerAlert').click(function() {
-                // The syntax for a standard jAlert
-                $.jAlert({
+        $.jAlert({
                     'title': 'Success!',
                     'content': 'This is a stylish jAlert popup.',
                     'theme': 'blue',
                     'btns': { 'text': 'Cool' }
                 });
-            });
-        });
     </script>
 
     <br><br>
