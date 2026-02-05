@@ -9,10 +9,23 @@
 </head>
 <body>
     <h1>Topic 1</h1>
-    <h2>13:54</h2>
-    <script type="text/javascript">
-        jAlert('You can use HTML, such as bold, italics, and underline!'); 
+    <h2>14:04</h2>
+
+    <button id="triggerAlert">Click Me for a jAlert!</button>
+    <script>
+        $(document).ready(function() {
+            $('#triggerAlert').click(function() {
+                // The syntax for a standard jAlert
+                $.jAlert({
+                    'title': 'Success!',
+                    'content': 'This is a stylish jAlert popup.',
+                    'theme': 'blue',
+                    'btns': { 'text': 'Cool' }
+                });
+            });
+        });
     </script>
+
     <br><br>
         <div id="adobe-dc-view"></div>
          <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
